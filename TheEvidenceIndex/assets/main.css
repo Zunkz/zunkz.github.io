@@ -894,6 +894,54 @@ h1.style6 span.p:nth-child(n + 2), h2.style6 span.p:nth-child(n + 2), h3.style6 
 	white-space: nowrap;
 }
 
+#buttons07 {
+	gap: 0.875rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons07:not(:first-child) {
+	margin-top: 1.625rem !important;
+}
+
+#buttons07:not(:last-child) {
+	margin-bottom: 1.625rem !important;
+}
+
+#buttons07 li a {
+	display: inline-block;
+	width: 26.5rem;
+	height: 4.375rem;
+	line-height: calc(4.375rem - 4px);
+	padding: 0 0.5rem;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-family: 'Sora', sans-serif;
+	letter-spacing: 0.05rem;
+	padding-left: calc(0.05rem + 0.5rem);
+	font-size: 2.25em;
+	font-weight: 800;
+	border-radius: 1rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: transform 0.625s ease, color 0.625s ease, background-color 0.625s ease, border-color 0.625s ease;
+}
+
+#buttons07 .button {
+	color: #FFFFFF;
+	border: solid 2px rgba(255,255,255,0.49);
+}
+
+#buttons07 .button:hover {
+	border-color: #FFFFFF !important;
+	color: #FFFFFF !important;
+}
+
+#buttons07 li a:hover {
+	transform: scale(1.0775);
+}
+
 #buttons02 {
 	gap: 0.875rem;
 	flex-direction: row;
@@ -910,7 +958,7 @@ h1.style6 span.p:nth-child(n + 2), h2.style6 span.p:nth-child(n + 2), h3.style6 
 
 #buttons02 li a {
 	display: inline-block;
-	width: 26.5rem;
+	width: 12.875rem;
 	height: 4.375rem;
 	line-height: calc(4.375rem - 4px);
 	padding: 0 0.5rem;
@@ -9181,6 +9229,24 @@ hr.style2:before {
 		line-height: 1.5;
 	}
 	
+	#buttons07 {
+		gap: 0.875rem;
+	}
+	
+	#buttons07:not(:first-child) {
+		margin-top: 1.21875rem !important;
+	}
+	
+	#buttons07:not(:last-child) {
+		margin-bottom: 1.21875rem !important;
+	}
+	
+	#buttons07 li a {
+		letter-spacing: 0.05rem;
+		padding-left: calc(0.05rem + 0.5rem);
+		font-size: 1.5em;
+	}
+	
 	#buttons02 {
 		gap: 0.875rem;
 	}
@@ -9196,7 +9262,7 @@ hr.style2:before {
 	#buttons02 li a {
 		letter-spacing: 0.05rem;
 		padding-left: calc(0.05rem + 0.5rem);
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}
 	
 	#buttons03 {
@@ -9901,14 +9967,18 @@ hr.style2:before {
 		--spacing: 0rem;
 	}
 	
-	#buttons02 {
+	#buttons07 {
 		flex-direction: column;
 		flex-wrap: nowrap;
 	}
 	
-	#buttons02 li a {
+	#buttons07 li a {
 		max-width: 32rem;
 		width: 100%;
+	}
+	
+	#buttons02 li a {
+		width: 7.25rem;
 	}
 	
 	#buttons03 {
@@ -10136,6 +10206,10 @@ hr.style2:before {
 	
 	#text30 {
 		font-size: 0.75em;
+	}
+	
+	#buttons07 {
+		gap: 0.65625rem;
 	}
 	
 	#buttons02 {

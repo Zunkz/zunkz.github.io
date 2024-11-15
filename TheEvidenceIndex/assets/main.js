@@ -4150,6 +4150,7 @@
 		onvisible.add('#image03', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#text01', { style: 'fade-down', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('h1.style2, h2.style2, h3.style2, p.style2', { style: 'fade-up', speed: 1000, intensity: 6, threshold: 3, delay: 250, replay: false });
+		onvisible.add('#buttons07', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 250, replay: false });
 		onvisible.add('#buttons02', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 250, replay: false });
 		onvisible.add('h1.style7, h2.style7, h3.style7, p.style7', { style: 'fade-down', speed: 1125, intensity: 1, threshold: 3, delay: 625, replay: false });
 		onvisible.add('#text15', { style: 'fade-down', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
