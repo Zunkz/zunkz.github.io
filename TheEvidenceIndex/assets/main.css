@@ -642,41 +642,6 @@ h1.style5 span.p:nth-child(n + 2), h2.style5 span.p:nth-child(n + 2), h3.style5 
 	margin-top: 1rem;
 }
 
-#text66:not(:first-child) {
-	margin-top: 1.5rem !important;
-}
-
-#text66:not(:last-child) {
-	margin-bottom: 1.5rem !important;
-}
-
-#text66 {
-	max-width: 61.375rem;
-	margin-left: var(--margin-left);
-	margin-right: var(--margin-right);
-	text-transform: uppercase;
-	color: #FFFFFF;
-	font-family: 'Sora', sans-serif;
-	letter-spacing: 0.05rem;
-	width: calc(100% + 0.05rem);
-	font-size: 1.5em;
-	line-height: 1.5;
-	font-weight: 800;
-	text-shadow: 0.221rem 0.221rem 0.125rem rgba(0,0,0,0.631);
-}
-
-#text66 a {
-	text-decoration: underline;
-}
-
-#text66 a:hover {
-	text-decoration: none;
-}
-
-#text66 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
 h1.style10, h2.style10, h3.style10, p.style10 {
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -963,54 +928,6 @@ h1.style6 span.p:nth-child(n + 2), h2.style6 span.p:nth-child(n + 2), h3.style6 
 }
 
 #buttons07 li a:hover {
-	transform: scale(1.0775);
-}
-
-#buttons02 {
-	gap: 0.875rem;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#buttons02:not(:first-child) {
-	margin-top: 1.625rem !important;
-}
-
-#buttons02:not(:last-child) {
-	margin-bottom: 1.625rem !important;
-}
-
-#buttons02 li a {
-	display: inline-block;
-	width: 12.875rem;
-	height: 4.375rem;
-	line-height: calc(4.375rem - 4px);
-	padding: 0 0.5rem;
-	vertical-align: middle;
-	text-transform: uppercase;
-	font-family: 'Sora', sans-serif;
-	letter-spacing: 0.05rem;
-	padding-left: calc(0.05rem + 0.5rem);
-	font-size: 2.25em;
-	font-weight: 800;
-	border-radius: 1rem;
-	direction: var(--site-language-direction);
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: transform 0.625s ease, color 0.625s ease, background-color 0.625s ease, border-color 0.625s ease;
-}
-
-#buttons02 .button {
-	color: #FFFFFF;
-	border: solid 2px rgba(255,255,255,0.49);
-}
-
-#buttons02 .button:hover {
-	border-color: #FFFFFF !important;
-	color: #FFFFFF !important;
-}
-
-#buttons02 li a:hover {
 	transform: scale(1.0775);
 }
 
@@ -1638,7 +1555,7 @@ h1.style6 span.p:nth-child(n + 2), h2.style6 span.p:nth-child(n + 2), h3.style6 
 	--gutters: 0rem;
 	--padding-horizontal: 0rem;
 	--padding-vertical: 0.625rem;
-	--spacing: 2.875rem;
+	--spacing: 1rem;
 	padding: var(--padding-vertical) var(--padding-horizontal);
 	border-top-left-radius: calc(3rem - 1px);
 	border-top-right-radius: calc(3rem - 1px);
@@ -1807,7 +1724,7 @@ h1.style6 span.p:nth-child(n + 2), h2.style6 span.p:nth-child(n + 2), h3.style6 
 	--gutters: 0rem;
 	--padding-horizontal: 0rem;
 	--padding-vertical: 1.375rem;
-	--spacing: 2.875rem;
+	--spacing: 1rem;
 	padding: var(--padding-vertical) var(--padding-horizontal);
 	border-bottom-left-radius: calc(3rem - 1px);
 	border-bottom-right-radius: calc(3rem - 1px);
@@ -5178,15 +5095,15 @@ hr.style2:before {
 	border-radius: 0px;
 }
 
-#divider08:not(:first-child) {
+#divider09:not(:first-child) {
 	margin-top: 0.875rem !important;
 }
 
-#divider08:not(:last-child) {
+#divider09:not(:last-child) {
 	margin-bottom: 0.875rem !important;
 }
 
-#divider08:before {
+#divider09:before {
 	width: 52rem;
 	background-color: #FFFFFF;
 	height: 2px;
@@ -9826,21 +9743,6 @@ hr.style2:before {
 		line-height: 1.5;
 	}
 	
-	#text66:not(:first-child) {
-		margin-top: 1.125rem !important;
-	}
-	
-	#text66:not(:last-child) {
-		margin-bottom: 1.125rem !important;
-	}
-	
-	#text66 {
-		letter-spacing: 0.05rem;
-		width: calc(100% + 0.05rem);
-		font-size: 0.75em;
-		line-height: 1.375;
-	}
-	
 	h1.style10, h2.style10, h3.style10, p.style10 {
 		letter-spacing: 0.04375rem;
 		width: calc(100% + 0.04375rem);
@@ -9920,24 +9822,6 @@ hr.style2:before {
 		letter-spacing: 0.05rem;
 		padding-left: calc(0.05rem + 0.5rem);
 		font-size: 1.5em;
-	}
-	
-	#buttons02 {
-		gap: 0.875rem;
-	}
-	
-	#buttons02:not(:first-child) {
-		margin-top: 1.21875rem !important;
-	}
-	
-	#buttons02:not(:last-child) {
-		margin-bottom: 1.21875rem !important;
-	}
-	
-	#buttons02 li a {
-		letter-spacing: 0.05rem;
-		padding-left: calc(0.05rem + 0.5rem);
-		font-size: 1.25em;
 	}
 	
 	#buttons03 {
@@ -10058,7 +9942,7 @@ hr.style2:before {
 		--gutters: 3rem;
 		--padding-horizontal: 2.5rem;
 		--padding-vertical: 3rem;
-		--spacing: 2.875rem;
+		--spacing: 1rem;
 	}
 	
 	#container13.columns > .wrapper > .inner > * {
@@ -10077,7 +9961,7 @@ hr.style2:before {
 		--gutters: 3rem;
 		--padding-horizontal: 2.5rem;
 		--padding-vertical: 3rem;
-		--spacing: 2.875rem;
+		--spacing: 1rem;
 	}
 	
 	#container07.columns > .wrapper > .inner > * {
@@ -10524,15 +10408,15 @@ hr.style2:before {
 		width: 52rem;
 	}
 	
-	#divider08:not(:first-child) {
+	#divider09:not(:first-child) {
 		margin-top: 0.25rem !important;
 	}
 	
-	#divider08:not(:last-child) {
+	#divider09:not(:last-child) {
 		margin-bottom: 0.25rem !important;
 	}
 	
-	#divider08:before {
+	#divider09:before {
 		width: 52rem;
 	}
 	
@@ -10726,10 +10610,6 @@ hr.style2:before {
 		width: 100%;
 	}
 	
-	#buttons02 li a {
-		width: 7.25rem;
-	}
-	
 	#buttons03 {
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -10784,11 +10664,11 @@ hr.style2:before {
 	}
 	
 	#container13 > .wrapper > .inner {
-		--spacing: 2.515625rem;
+		--spacing: 0.875rem;
 	}
 	
 	#container07 > .wrapper > .inner {
-		--spacing: 2.515625rem;
+		--spacing: 0.875rem;
 	}
 	
 	#container12 > .wrapper > .inner {
@@ -10929,10 +10809,6 @@ hr.style2:before {
 		font-size: 1.375em;
 	}
 	
-	#text66 {
-		font-size: 0.75em;
-	}
-	
 	h1.style10, h2.style10, h3.style10, p.style10 {
 		font-size: 1.375em;
 	}
@@ -10970,10 +10846,6 @@ hr.style2:before {
 	}
 	
 	#buttons07 {
-		gap: 0.65625rem;
-	}
-	
-	#buttons02 {
 		gap: 0.65625rem;
 	}
 	
@@ -11019,14 +10891,14 @@ hr.style2:before {
 		--gutters: 3rem;
 		--padding-horizontal: 1.875rem;
 		--padding-vertical: 2.25rem;
-		--spacing: 2.15625rem;
+		--spacing: 0.75rem;
 	}
 	
 	#container07 > .wrapper > .inner {
 		--gutters: 3rem;
 		--padding-horizontal: 1.875rem;
 		--padding-vertical: 2.25rem;
-		--spacing: 2.15625rem;
+		--spacing: 0.75rem;
 	}
 	
 	#container12 > .wrapper > .inner {
