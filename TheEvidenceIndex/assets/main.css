@@ -376,31 +376,6 @@ body.is-instant:after {
 	z-index: 1;
 }
 
-#image03:not(:first-child) {
-	margin-top: 1.75rem !important;
-}
-
-#image03:not(:last-child) {
-	margin-bottom: 1.75rem !important;
-}
-
-#image03 .frame {
-	width: 3.625rem;
-	border-radius: 100%;
-	box-shadow: 0rem 1.75rem 2rem 0rem rgba(0,0,0,0.29);
-	transition: transform 0.5s ease, z-index 0.5s ease;
-}
-
-#image03 img {
-	-webkit-touch-callout: none;
-	user-select: none;
-}
-
-#image03 .frame:hover {
-	transform: rotate(5.625deg);
-	z-index: 1;
-}
-
 .image.style1 .frame {
 	width: 28.75rem;
 	box-shadow: 0rem 1.75rem 2rem 0rem rgba(0,0,0,0.631);
@@ -1133,23 +1108,23 @@ h1.style7 span.p:nth-child(n + 2), h2.style7 span.p:nth-child(n + 2), h3.style7 
 
 .buttons.style3 li a {
 	display: inline-block;
-	width: 18.875rem;
+	width: 8.125rem;
 	height: auto;
-	line-height: 2rem;
-	padding: 0 2rem;
+	line-height: 1rem;
+	padding: 0 0.75rem;
 	vertical-align: middle;
 	text-transform: uppercase;
 	font-family: 'Sora', sans-serif;
 	letter-spacing: 0.05rem;
-	padding-left: calc(0.05rem + 2rem);
+	padding-left: calc(0.05rem + 0.75rem);
 	font-size: 1.375em;
 	font-weight: 800;
 	border-radius: 1rem;
 	direction: var(--site-language-direction);
 	overflow: hidden;
 	text-overflow: ellipsis;
-	padding-bottom: 1.25rem;
-	padding-top: 1.25rem;
+	padding-bottom: 0.46875rem;
+	padding-top: 0.46875rem;
 	white-space: normal;
 	text-align: var(--alignment);
 	transition: transform 0.625s ease, color 0.625s ease, background-color 0.625s ease, border-color 0.625s ease;
@@ -1236,7 +1211,6 @@ h1.style7 span.p:nth-child(n + 2), h2.style7 span.p:nth-child(n + 2), h3.style7 
 #container19 > .wrapper > .inner {
 	--gutters: 3rem;
 	--padding-vertical: 1rem;
-	--spacing: 1rem;
 	padding: var(--padding-vertical) var(--padding-horizontal);
 	border-radius: calc(3rem - 1px);
 }
@@ -5512,14 +5486,6 @@ h1.style7 span.p:nth-child(n + 2), h2.style7 span.p:nth-child(n + 2), h3.style7 
 	width: 100%;
 }
 
-#header {
-	margin-bottom: 0rem !important;
-}
-
-#footer {
-	margin-top: 0rem !important;
-}
-
 hr {
 	align-items: center;
 	border: 0;
@@ -5533,6 +5499,21 @@ hr {
 
 hr:before {
 	content: '';
+}
+
+#divider03:not(:first-child) {
+	margin-top: 2.625rem !important;
+}
+
+#divider03:not(:last-child) {
+	margin-bottom: 2.625rem !important;
+}
+
+#divider03:before {
+	width: 1rem;
+	background-color: transparent;
+	height: 4px;
+	border-radius: 0px;
 }
 
 hr.style2:not(:first-child) {
@@ -5600,6 +5581,14 @@ hr.style2:before {
 	background-color: transparent;
 	height: 4px;
 	border-radius: 0px;
+}
+
+#header {
+	margin-bottom: 0rem !important;
+}
+
+#footer {
+	margin-top: 0rem !important;
 }
 
 .links {
@@ -7316,6 +7305,92 @@ hr.style2:before {
 
 #video13 .frame:before {
 	padding-top: 56.25%;
+}
+
+.icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: var(--flex-alignment);
+	letter-spacing: 0;
+	padding: 0;
+}
+
+.icons li {
+	position: relative;
+	z-index: 1;
+}
+
+.icons li a {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.icons li a svg {
+	display: block;
+	pointer-events: none;
+	position: relative;
+}
+
+.icons li a + svg {
+	display: block;
+	height: 100%;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.icons li a .label {
+	display: none;
+}
+
+.icons.style1 {
+	font-size: 3.625em;
+	gap: 2rem;
+}
+
+.icons.style1:not(:first-child) {
+	margin-top: 2.125rem !important;
+}
+
+.icons.style1:not(:last-child) {
+	margin-bottom: 2.125rem !important;
+}
+
+.icons.style1 li a {
+	border-radius: 0.5rem;
+	height: 1em;
+	width: 1em;
+	transition: transform 0.625s ease, color 0.625s ease, background-color 0.625s ease, border-color 0.625s ease;
+}
+
+.icons.style1 li a svg {
+	height: 100%;
+	width: 100%;
+	transition: fill 0.625s ease;
+}
+
+.icons.style1 a svg {
+	fill: #FFFFFF;
+}
+
+.icons.style1 a:hover svg {
+	fill: #FFFFFF !important;
+}
+
+.icons.style1 li a + svg {
+	transition: transform 0.625s ease, fill 0.625s ease, stroke 0.625s ease;
+}
+
+.icons.style1 li a:hover {
+	transform: scale(1.13);
+}
+
+.icons.style1 li a:hover + svg {
+	transform: scale(1.13);
 }
 
 @media (orientation: portrait) {
@@ -10548,18 +10623,6 @@ hr.style2:before {
 		width: 10.125rem;
 	}
 	
-	#image03:not(:first-child) {
-		margin-top: 1.3125rem !important;
-	}
-	
-	#image03:not(:last-child) {
-		margin-bottom: 1.3125rem !important;
-	}
-	
-	#image03 .frame {
-		width: 3.375rem;
-	}
-	
 	.image.style1 .frame {
 		width: 13.25rem;
 	}
@@ -10795,14 +10858,13 @@ hr.style2:before {
 	
 	.buttons.style3 li a {
 		letter-spacing: 0.05rem;
-		padding-left: calc(0.05rem + 2rem);
+		padding-left: calc(0.05rem + 0.75rem);
 		font-size: 1em;
 	}
 	
 	#container19 > .wrapper > .inner {
 		--gutters: 3rem;
 		--padding-vertical: 0.625rem;
-		--spacing: 1rem;
 	}
 	
 	#container19.columns > .wrapper > .inner > * {
@@ -11355,12 +11417,16 @@ hr.style2:before {
 		min-height: auto;
 	}
 	
-	#header {
-		margin-bottom: 0rem !important;
+	#divider03:not(:first-child) {
+		margin-top: 0.25rem !important;
 	}
 	
-	#footer {
-		margin-top: 0rem !important;
+	#divider03:not(:last-child) {
+		margin-bottom: 0.25rem !important;
+	}
+	
+	#divider03:before {
+		width: 1rem;
 	}
 	
 	hr.style2:not(:first-child) {
@@ -11421,6 +11487,14 @@ hr.style2:before {
 	
 	#divider01:before {
 		width: 1rem;
+	}
+	
+	#header {
+		margin-bottom: 0rem !important;
+	}
+	
+	#footer {
+		margin-top: 0rem !important;
 	}
 	
 	.links.style1 {
@@ -11593,6 +11667,19 @@ hr.style2:before {
 	.video.style2 .frame {
 		width: 59.25rem;
 	}
+	
+	.icons.style1 {
+		font-size: 3.625em;
+		gap: 2rem;
+	}
+	
+	.icons.style1:not(:first-child) {
+		margin-top: 1.59375rem !important;
+	}
+	
+	.icons.style1:not(:last-child) {
+		margin-bottom: 1.59375rem !important;
+	}
 }
 
 @media (max-width: 480px) {
@@ -11650,9 +11737,7 @@ hr.style2:before {
 		width: 100%;
 	}
 	
-	#container19 > .wrapper > .inner {
-		--spacing: 0.875rem;
-	}
+	
 	
 	#container02 > .wrapper > .inner {
 		--spacing: 0.875rem;
@@ -11879,7 +11964,6 @@ hr.style2:before {
 	#container19 > .wrapper > .inner {
 		--gutters: 3rem;
 		--padding-vertical: 0.46875rem;
-		--spacing: 0.75rem;
 	}
 	
 	#container02 > .wrapper > .inner {
@@ -12115,5 +12199,9 @@ hr.style2:before {
 	
 	.gallery.style3 ul {
 		--gap: 0.75rem;
+	}
+	
+	.icons.style1 {
+		gap: 1.5rem;
 	}
 }
