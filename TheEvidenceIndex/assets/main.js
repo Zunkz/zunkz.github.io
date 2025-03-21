@@ -29,27 +29,38 @@
 					a = [
 						[
 							'firefox',
-							/Firefox\/([0-9\.]+)/
+							/Firefox\/([0-9\.]+)/,
+							null
 						],
 						[
 							'edge',
-							/Edge\/([0-9\.]+)/
+							/Edge\/([0-9\.]+)/,
+							null
 						],
 						[
 							'safari',
-							/Version\/([0-9\.]+).+Safari/
+							/Version\/([0-9\.]+).+Safari/,
+							null
 						],
 						[
 							'chrome',
-							/Chrome\/([0-9\.]+)/
+							/Chrome\/([0-9\.]+)/,
+							null
 						],
 						[
 							'chrome',
-							/CriOS\/([0-9\.]+)/
+							/CriOS\/([0-9\.]+)/,
+							null
 						],
 						[
 							'ie',
-							/Trident\/.+rv:([0-9]+)/
+							/Trident\/.+rv:([0-9]+)/,
+							null
+						],
+						[
+							'safari',
+							/iPhone OS ([0-9_]+)/,
+							function(v) { return v.replace('_', '.').replace('_', ''); }
 						]
 					];
 		
@@ -58,7 +69,7 @@
 						if (ua.match(a[i][1])) {
 		
 							o.browser = a[i][0];
-							o.browserVersion = parseFloat(RegExp.$1);
+							o.browserVersion = parseFloat( a[i][2] ? (a[i][2])(RegExp.$1) : RegExp.$1 );
 		
 							break;
 		
@@ -4148,10 +4159,11 @@
 		});
 	
 	// Initialize "On Visible" animations.
-		onvisible.add('#image03', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
+		onvisible.add('#image05', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#text01', { style: 'fade-down', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('h1.style2, h2.style2, h3.style2, p.style2', { style: 'fade-up', speed: 1000, intensity: 6, threshold: 3, delay: 250, replay: false });
 		onvisible.add('#buttons07', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 250, replay: false });
+		onvisible.add('#image03', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#text15', { style: 'fade-down', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('hr.style2', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#buttons03', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
@@ -4172,11 +4184,11 @@
 		onvisible.add('#divider07', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 375, replay: false });
 		onvisible.add('#video05', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#video22', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
+		onvisible.add('#video08', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#container18', { style: 'fade-down', speed: 500, intensity: 2, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#container18 > .wrapper > .inner', { style: 'blur-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#container08', { style: 'fade-up', speed: 500, intensity: 2, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#container08 > .wrapper > .inner', { style: 'blur-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
-		onvisible.add('#video08', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#text29', { style: 'fade-down', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('h1.style6, h2.style6, h3.style6, p.style6', { style: 'fade-down', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('.image.style1', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
