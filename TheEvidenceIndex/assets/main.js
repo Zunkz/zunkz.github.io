@@ -1052,6 +1052,7 @@
 				},
 				sections = {
 					'home': {
+						hideHeader: true,
 						events: {
 							onopen: [
 								function() { 
@@ -4220,7 +4221,6 @@
 		onvisible.add('.buttons.style3', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#text30', { style: 'fade-down', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('h1.style7, h2.style7, h3.style7, p.style7', { style: 'fade-down', speed: 1125, intensity: 1, threshold: 3, delay: 625, replay: false });
-		onvisible.add('.icons.style1', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 250, stagger: 125, staggerSelector: ':scope > li', replay: false });
 	
 	// Run ready handlers.
 		ready.run();
