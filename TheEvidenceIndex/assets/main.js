@@ -4029,9 +4029,9 @@
 		
 		var _lightboxGallery = new lightboxGallery;
 	
-	// Gallery: gallery02.
+	// Gallery: gallery13.
 		_lightboxGallery.init({
-			id: 'gallery02',
+			id: 'gallery13',
 			navigation: true,
 			captions: false,
 			mobile: true,
@@ -4039,9 +4039,9 @@
 			scheme: 'dark',
 		});
 	
-	// Gallery: gallery13.
+	// Gallery: gallery02.
 		_lightboxGallery.init({
-			id: 'gallery13',
+			id: 'gallery02',
 			navigation: true,
 			captions: false,
 			mobile: true,
@@ -4174,15 +4174,15 @@
 		onvisible.add('.links.style1', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#text09', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('h1.style10, h2.style10, h3.style10, p.style10', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
-		onvisible.add('#divider02', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 375, replay: false });
+		onvisible.add('#divider08', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 375, replay: false });
 		onvisible.add('#text70', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
-		onvisible.add('#gallery02', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
+		onvisible.add('#divider09', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 375, replay: false });
 		onvisible.add('#gallery13', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
+		onvisible.add('#divider02', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 375, replay: false });
+		onvisible.add('#gallery02', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#container17', { style: 'fade-in', speed: 500, intensity: 2, threshold: 3, delay: 0, replay: false });
-		onvisible.add('#container10', { style: 'fade-in', speed: 500, intensity: 2, threshold: 3, delay: 0, replay: false });
 		onvisible.add('.video.style1', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#container14', { style: 'fade-in', speed: 500, intensity: 2, threshold: 3, delay: 0, replay: false });
-		onvisible.add('#divider07', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 375, replay: false });
 		onvisible.add('#video05', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#video22', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#video08', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
@@ -4190,6 +4190,7 @@
 		onvisible.add('#container18 > .wrapper > .inner', { style: 'blur-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#container08', { style: 'fade-up', speed: 500, intensity: 2, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#container08 > .wrapper > .inner', { style: 'blur-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
+		onvisible.add('#divider07', { style: 'fade-in', speed: 1000, intensity: 5, threshold: 3, delay: 375, replay: false });
 		onvisible.add('#text29', { style: 'fade-down', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('h1.style6, h2.style6, h3.style6, p.style6', { style: 'fade-down', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('.image.style1', { style: 'fade-up', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
